@@ -1,0 +1,79 @@
+Host bart
+HostName 151.100.44.245
+User gaps
+
+Host mira_bart
+HostName 151.100.44.245
+User francescomira
+
+Host gaia
+HostName 151.100.44.159
+User gaps
+
+Host dave
+HostName 151.100.44.102
+User gaps
+
+Host lisa
+HostName 151.100.38.237
+User gaps
+Port 31415
+
+Host fermi
+HostName login.fermi.cineca.it
+User amarocch
+
+Host bastion
+HostName bastion.cnaf.infn.it
+User amarocchino
+
+Host mira_bastion
+HostName bastion.cnaf.infn.it
+User mira
+
+Host hgrepo_gaps_gaia
+HostName 151.100.44.159
+User hgrepo_gaps
+
+Host cnaf
+HostName ui-hpc.cr.cnaf.infn.it
+User amarocchino
+ProxyCommand ssh amarocchino@bastion.cnaf.infn.it nc %h %p 2> /dev/null
+
+Host mira_cnaf
+HostName ui-hpc.cr.cnaf.infn.it
+User mira
+ProxyCommand ssh mira@bastion.cnaf.infn.it nc %h %p 2> /dev/null
+
+Host lxp
+HostName lxplus01.lnf.infn.it
+User amarocc
+
+Host albz_lnf
+HostName 193.206.80.194
+User albz
+
+Host albz_node
+HostName 10.10.2.11
+User sparc
+
+
+Host cresco
+HostName cresco-in.frascati.enea.it
+User marocchi
+
+Host cresco-scp
+HostName cresco-scp.portici.enea.it
+User marocchi
+
+Host marconi
+HostName login.marconi.cineca.it
+User amarocch
+
+Host octo
+	HostName octo-prd-quality-mi01.octobuild.net
+	User a.marocchino_ext
+
+Host octo_prod
+	HostName octo-prd-quality-mi01.octobuild.net
+	User prod_quality
